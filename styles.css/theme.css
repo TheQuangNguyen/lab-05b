@@ -1,0 +1,58 @@
+#a { 
+  background: red;
+}
+#b { 
+  background: blue;
+}
+#i { 
+  background: brown;
+}
+#c { 
+  background: green;
+}
+#d { 
+  background: lightgreen;
+}
+#e { 
+  background: purple;
+}
+#f { 
+  background: violet; 
+}
+#g { 
+  background: pink;
+}
+#h { 
+  background: lightsalmon;
+}
+
+/* jquery to change the colors for bigger screen */
+
+.color1 { 
+  background: papayawhip;
+  display: hidden;
+}
+.color2 { 
+  background: aquamarine;
+}
+.color3 { 
+  background: beige;
+}
+.color4 { 
+  background: chartreuse; 
+}
+.color5 { 
+  background: darkcyan;
+}
+.color6 { 
+  background: fuchsia;
+}
+.color7 { 
+  background: gold;
+}
+.color8 { 
+  background: honeydew;
+}
+.color9 { 
+  background: mediumpurple;
+}

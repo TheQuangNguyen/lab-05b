@@ -1,0 +1,136 @@
+@media (min-width: 300px) and (max-width: 750px) { 
+  #a { 
+    height: 75px;
+    width: 100vw;   
+  }
+  #b { 
+    height: 150px;
+    width: 100vw;
+  }
+  #c, #d { 
+    height: 125px;
+    width: 100vw;
+  }
+  section { 
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 50%;
+  }
+  #e, #f, #g, #h { 
+    height: 250px;
+    width: 50%;
+  }
+  footer { 
+    height: 80px;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1050px) { 
+  body { 
+    width: 100vw;
+    height: auto; 
+    display: grid; 
+    grid-template-rows: 100px 200px 250px 150px;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-areas:
+      "a a a a a"
+      "b main main main main"
+      "b section section section section"
+      "b i i i i"
+  }
+  #a { 
+    grid-area: a;
+    height: 100px;
+    width: 100vw;   
+  }
+  #b { 
+    grid-area: b;
+    height: 600px;
+    width: 100%;
+  }
+  #c, #d { 
+    height: 200px;
+    width: 50%;
+  }
+  main { 
+    display: flex;
+  }
+  section { 
+    display: flex;
+  }
+  #e, #f, #g, #h { 
+    height: 250px;
+    width: 25%;
+  }
+  section { 
+    grid-area: section;
+    height: 200px;
+    width: 100%;
+  }
+  main { 
+    grid-area: main;
+    height: 250px;
+    width: 100%;
+  }
+  footer { 
+    grid-area: i;
+    height: 150px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1050px) { 
+  body { 
+    width: 960px;
+    height: auto; 
+    display: grid; 
+    grid-template-rows: 100px 200px 250px 150px;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-areas:
+      "a a a a a"
+      "b main main main main"
+      "b section section section section"
+      "b i i i i";
+    margin: auto;
+  }
+  #a { 
+    grid-area: a;
+    height: 100px;
+    width: 960px;   
+  }
+  #b { 
+    grid-area: b;
+    height: 600px;
+    width: 100%;
+  }
+  #c, #d { 
+    height: 200px;
+    width: 50%;
+  }
+  main { 
+    display: flex;
+  }
+  section { 
+    display: flex;
+  }
+  #e, #f, #g, #h { 
+    height: 250px;
+    width: 25%;
+  }
+  section { 
+    grid-area: section;
+    height: 200px;
+    width: 100%;
+  }
+  main { 
+    grid-area: main;
+    height: 250px;
+    width: 100%;
+  }
+  footer { 
+    grid-area: i;
+    height: 150px;
+    width: 100%;
+  }
+}
