@@ -1,26 +1,36 @@
 'use strict';
 
 function checkScreenSize() {
-  if ($(window).width() > 768) { 
-    $('header').addClass('color1');
-    $('nav').addClass('color2');
-    $('section > div:first-child').addClass('color3');
-    $('section > div:last-child').addClass('color4');
-    $('figure > div:first-child').addClass('color5');
-    $('figure > div:nth-child(2)').addClass('color6');
-    $('figure > div:nth-child(3)').addClass('color7');
-    $('figure > div:last-child').addClass('color8');
-    $('footer').addClass('color9');
-  } else {
-    $('header').removeClass('color1');
-    $('nav').removeClass('color2');
-    $('section > div:first-child').removeClass('color3');
-    $('section > div:last-child').removeClass('color4');
-    $('figure > div:first-child').removeClass('color5');
-    $('figure > div:nth-child(2)').removeClass('color6');
-    $('figure > div:nth-child(3)').removeClass('color7');
-    $('figure > div:last-child').removeClass('color8');
-    $('footer').removeClass('color9');
+  if ($(window).width() > 750 && $(window).width() < 1050) { 
+    $('#a').css("background", "papayawhip");
+    $('#b').css("background", "aquamarine");
+    $('#c').css("background", "beige");
+    $('#d').css("background", "chartreuse");
+    $('#e').css("background", "darkcyan");
+    $('#f').css("background", "fuchsia");
+    $('#g').css("background", "gold");
+    $('#h').css("background", "honeydew");
+    $('#b').css("background", "mediumpurple");
+  } else if ($(window).width() >= 1050) { 
+    $('#a').css("background", "wheat");
+    $('#b').css("background", "olive");
+    $('#c').css("background", "orchid");
+    $('#d').css("background", "palegreen");
+    $('#e').css("background", "peru");
+    $('#f').css("background", "rebeccapurple");
+    $('#g').css("background", "silver");
+    $('#h').css("background", "teal");
+    $('#b').css("background", "yellow");
+  } else if ($(window).width() <= 750) { 
+    $('#a').css("background", "red");
+    $('#b').css("background", "blue");
+    $('#c').css("background", "brown");
+    $('#d').css("background", "green");
+    $('#e').css("background", "lightgreen");
+    $('#f').css("background", "purple");
+    $('#g').css("background", "violet");
+    $('#h').css("background", "pink");
+    $('#b').css("background", "lightsalmon");
   }
 }
 
